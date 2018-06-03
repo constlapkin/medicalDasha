@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body{
+  background-color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+
+-webkit-font-smoothing: antialiased;
+-webkit-font-overflow-scrolling: touch;
+  margin-top: 70px;
+
+
+}
+.topbutton {
+width:50px;
+border:2px solid #ff7878;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:35px;
+cursor:pointer;
+color:#333;
+font-size:12px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+}
+.form-search {
+  width: 200px;
+  padding-top: 10px;
+  margin-left:15px;
+          }
+.btn-secondary {
+  background-color: #ff7878;
+  color: #fff;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+font-family: "Raleway";
+font-weight: 300;
+color: #333;
+}
+p{
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+.centred{
+  text-align: center;
+}
+a{
+  color: #f85c37;
+}
+a:hover, a:focus{
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+.navbar {
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-inverse{
+  background: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #ff7878;
+}
+input[type=submit] {
+    padding:15px 15px;
+    background: #2d2d2d;
+    border:0 none;
+    cursor:pointer;
+    color: #9d9d9d;
+
+}
+input[type=submit]:hover {
+    color: #ffffff;
+
+}
+.reg{
+padding-right: 50%;
+    text-align: justify;
+}
+.buttonedorde{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+
+.navbar-inverse .navbar-brand{
+  color: #fff;
+  font-weight: bolder;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+#headerwrap{
+
+  background: url(../img/health.jpg) no-repeat center top;
+  margin-top: -10px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+
+
+  background-size: 100%;
+
+
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: cover;
+}
+#headerwrap h1 {
+  margin-top: 50px;
+  color: #2d2d2d;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 1px;
+
+}
+#headerwrap h3{
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing:1px;
+
+}
+.information{
+  padding-top: 35px;
+
+}
+.information h4 {
+  font-size: 25px;
+  }
+  .care h4{
+font-size: 30px;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+ border-bottom: 1px solid;
+  }
+  .care{
+    font-size: 20px;
+  padding-bottom: 10px;
+   text-align: center;
+
+  }
+#dg{
+  background: #e8e8e8;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#dg h4{
+  font-size: 30px;
+}
+.tilta {
+  float: left;
+  display:inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.tilta img {
+  width: 400px;
+  height:auto;
+  display: block;
+}
+
+.rows {
+  margin-left: 0;
+  margin-right: 0;
+}
+#inf{
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 40px;
+  font-style: normal;
+}
+#inf h4{
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.rightimg {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-style: normal;
+    float:right;
+    margin: 7px 7px 7px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 5px;
+   }
+   .txtalignment{
+     font-size: 20px;
+     padding-top: 70px;
+    text-align: left;
+   }
+   .selectcolor{
+    font-weight: bold;
+    padding-top: 30px;
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-indent: 0.5em;
+      text-align: left;
+   }
+
+#helppeople{
+
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 40px;
+  font-style: normal;
+}
+.leftimg {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-style: normal;
+    float:left;
+    margin: 10px 0 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  padding: 10px;
+   }
+   .txtali{
+     font-size: 20px;
+     padding-top: 70px;
+     margin: 100px;
+     padding-bottom: 100px;
+    text-align: center;
+   }
+   #backgroundicon{
+     background: url(../img/icon.jpg) no-repeat center top;
+     padding-top: 50px;
+     text-align: right;
+     background-attachment: fixed;
+     min-height: 500px;
+     width: 100%;
+
+
+     background-size: 100%;
+
+
+     -webkit-background-size:cover;
+     -moz-background-size:cover;
+     -o-background-size:cover;
+     background-size: cover;
+   }
+   .icon{
+
+   font-size: 21px;
+   padding-top: 70px;
+   margin: 50px;
+   margin-left: 500px;
+   padding: 70px;
+  text-indent: 1.5em;
+  text-align: center;
+  letter-spacing: 1px;
+  font-style: normal;
+  float:right;
+  line-height: 1.8
+}
+
+  a.knopka {
+    margin-right:auto;
+
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: #2d2d2d;
+    padding: 0.7em ;
+    outline: none;
+    border-radius: 5px;
+  }
+  a.knopka:hover { background: #ff7878; }
+  a.knopka:active { background: rgb(152,15,0); }
+
+
+a:hover {background-position: right center;}
+#footer{
+  background: #2d2d2d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+#footer i{
+  color: #bdbdbd;
+  font-size: 30px;
+  padding: 20px;
+
+}
+#footer i:hover {
+  color: #ff7878;
+}
+
+#footer  h4{
+  color: #fff;
+}
+#footer .open {
+  color: #fff;
+  font-size: 15px;
+float: right;
+}
+
+
+  #footer.letter {
+    color: #bdbdbd;
+  font-size: 10px;
+  top left: 20px;}
+
+  #footer .news p{
+    text-decoration: underline;
+     color: #fff;
+     text-align: center;
+     margin-top: -10px;
+padding-left: 200px;
+
+  }
+    #footer .news h4{
+      text-align: center;
+       margin-top: -100px;
+       padding-left: 200px;
+    }
+
+.about{
+  background: Gainsboro;
+    padding: 20px;
+    }
+    .about h1 {
+        color: black;
+        margin-top: -30px;
+        padding-left: 100px;
+    }
+    .visionimg {
+      text-align: center;
+      font-size: 2px;
+      letter-spacing: 1px;
+      font-style: normal;
+        float:right;
+        margin: 7px 7px 7px 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        padding: 5px;
+        border-radius: 5px;
+       }
+       .ourmision h1{
+     font-size: 30px;
+     padding-bottom: 10px;
+     text-align: left;
+
+       }
+       .ourmision{
+         font-size: 20px;
+        text-align: left;
+
+        button {outline: none;}
+ .text {
+   display: block;
+   width: 300px;
+   height: 10px;
+   border: 1px solid black;
+   padding: 5px;
+   margin-top: 5px;
+   outline: none;
+   overflow: hidden;
+ }
+ .text:focus, button:focus ~ .text {height: auto;}
