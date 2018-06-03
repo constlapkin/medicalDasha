@@ -7,7 +7,6 @@ if(isset($data['submit_login'])){
     if ($user){
         if(password_verify($data['password'], $user->password)) {
             $_SESSION['logged_user'] = $user;
-
         }
         else {
             $errors[] = "Wrong email or password";
