@@ -1,13 +1,4 @@
 </div></div>
-<div id="backgroundicon">
-    <div class="icon">
-        <p><strong> Experience world-class care</strong><br>
-            We are committed to the provision of high quality, patient<br>
-            centred care, delivered by experienced healthcare providers.</p>
-
-        <a href="#" class="knopka">Our departments</a>
-    </div>
-</div>
 
 
 <div id="footer">

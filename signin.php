@@ -1,5 +1,5 @@
 <?php require 'settings_db_rb.php';
-include 'templates/simple_head.html';
+
 $data = $_POST;
 if(isset($data['submit_login'])){
     $errors = array();
@@ -7,6 +7,7 @@ if(isset($data['submit_login'])){
     if ($user){
         if(password_verify($data['password'], $user->password)) {
             $_SESSION['logged_user'] = $user;
+            header("Location: /");
         }
         else {
             $errors[] = "Wrong email or password";
@@ -15,14 +16,11 @@ if(isset($data['submit_login'])){
     else {
         $errors[] = "This email does not exist";
     }
-
-    if(empty($errors)){
-
-    }
-    else {
+    if($errors){
         echo '<div style="color:red;">' .array_shift($errors).'</div><hr>';
     }
 }
+include 'templates/header_index.php';
 ?>
 
 <div class="container">

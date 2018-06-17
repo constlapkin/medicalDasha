@@ -1,5 +1,5 @@
 <?php include 'settings_db_rb.php';
-include 'templates/simple_head.html';
+
 /*
  * Страница регистрации - с проверкой на ввод данных и
  * существование уже этих данных в базе
@@ -30,8 +30,7 @@ if(isset($data['submit_reg'])){
         $errors[] = 'Enter password!';
     }
     if ($data['password_check'] != $data['password']){
-        $errors[] = 'Passwords do not match
-!';
+        $errors[] = 'Passwords do not match!';
     }
 
     if(empty($errors)){
@@ -42,13 +41,22 @@ if(isset($data['submit_reg'])){
         $user->email = $data['email'];
         $user->password = password_hash($data['password'], PASSWORD_DEFAULT);
         $user->join_date = date("Y-m-d");
+        $user->category_users_id = 1;
         R::store($user);
-        
+        $user_session = R::findOne('users', 'email = ?', array($data['email']));
+        if ($user_session) {
+            $_SESSION['logged_user'] = $user;
+        }
+        else {
+            $errors[] = "Error with auth or save reg user.";
+        }
+        header("Location: /");
     }
     else {
         echo '<div style="color:red;">' .array_shift($errors).'</div><hr>';
     }
 }
+include 'templates/header_index.php';
 ?>
 <div class="container">
     <h1>Registration</h1>

@@ -4,7 +4,7 @@
  * Кнопка создать статью, выдает форму для создания статьи
  * В случае, если не авторизован, сообщается об этом и ничего не выводит
  */
-include 'templates/header_base.php';
+include 'templates/header_admin.php';
 $data = $_POST;
 
 if (isset($data['submit_create_post'])) {

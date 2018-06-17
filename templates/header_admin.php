@@ -11,17 +11,17 @@
 
 </head>
 <body>
-<a href="#" class="topbutton"><i class="fa fa-chevron-up"></i></a>
+<a href="/" class="topbutton"><i class="fa fa-chevron-up"></i></a>
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
 
         <div class="navbar-header">
-            <a class="navbar-brand" href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i>Clinic</a>
+            <a class="navbar-brand" href="/"><i class="fa fa-heartbeat" aria-hidden="true"></i>Clinic</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-inverse navbar-nav navbar-right">
 
-                <li class="active"><a href="../ ">Home</a></li>
+                <li class="active"><a href="../">Home</a></li>
                 <li><form action="../admin.php" method="post"><input type="submit" name="submit_create" value="Create Post"></form></li>
                 <li><a href="#">\</a></li>
                 <li><a href="#">\</a></li>

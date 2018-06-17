@@ -13,7 +13,7 @@ $id = $_GET['id'];
 if(!$id){
     header('Location: /admin.php');
 }
-include 'templates/header_base.php';
+include 'templates/header_admin.php';
 
 if (isset($_SESSION['logged_user'])) {
 

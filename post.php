@@ -1,4 +1,5 @@
 <?php include 'settings_db_rb.php';
+include 'templates/header_index.php';
 
 $id = $_GET['id'];
 

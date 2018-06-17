@@ -1,5 +1,5 @@
 <?php include 'settings_db_rb.php';
-include 'templates/header.php';
+include 'templates/header_index.php';
 /*
 if (isset($_SESSION['logged_user'])) :
 ?>
@@ -31,5 +31,5 @@ foreach ($posts as $post_row){
 echo ('<h4><a href="post.php?id='.$post_row["id"].'">'.$post_row['title'].'</a></h4>');
 echo ('<p>'.$post_row['description'].'</p>');
 }
-include 'templates/footer.php';
-?>
+include 'templates/footer_index.php';
+
