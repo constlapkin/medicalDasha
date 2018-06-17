@@ -1,5 +1,5 @@
 <?php include 'settings_db_rb.php';
-if (!isset($_SESSION['logged_user'])) {
+if(!isset($_SESSION['logged_user']) or $_SESSION['logged_user']['category_users_id'] == 1){
     header('Location: /');
 }
 /*
@@ -69,6 +69,8 @@ if (isset($_SESSION['logged_user'])) {
 if ($id and isset($_SESSION['logged_user'])):
     ?>
 <div class="container">
+    <p><a href="admin_posts.php"><- Back</a></p>
+    <br>
     <form action="edit.php" method="post">
         <input type="hidden" name="id" value="<? echo ($post['id']) ?>"><br>
         <input type="hidden" name="create_date" value="<? echo ($post['create_date']) ?>"><br>

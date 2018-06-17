@@ -4,7 +4,9 @@
  * Страница регистрации - с проверкой на ввод данных и
  * существование уже этих данных в базе
  */
-
+if(!isset($_SESSION['logged_user'])){
+    header('Location: /');
+}
 $data = $_POST;
 if(isset($data['submit_reg'])){
     $errors = Array();

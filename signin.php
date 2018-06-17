@@ -1,5 +1,7 @@
 <?php require 'settings_db_rb.php';
-
+if(!isset($_SESSION['logged_user'])){
+    header('Location: /');
+}
 $data = $_POST;
 if(isset($data['submit_login'])){
     $errors = array();

@@ -26,8 +26,10 @@
                 <li><a href="#">Contacts</a></li>
                 <?php
                 if (isset($_SESSION['logged_user'])) :
+                    if($_SESSION['logged_user']['category_users_id'] != 1) :
                 ?>
                     <li><a href="admin.php">Admin Panel</a></li>
+                    <?php endif; ?>
                     <li><a href="signout.php">Sign Out</a></li>
 
                 <?php
