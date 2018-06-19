@@ -4,7 +4,7 @@
  * Страница регистрации - с проверкой на ввод данных и
  * существование уже этих данных в базе
  */
-if(!isset($_SESSION['logged_user'])){
+if(isset($_SESSION['logged_user'])){
     header('Location: /');
 }
 $data = $_POST;
@@ -58,7 +58,7 @@ if(isset($data['submit_reg'])){
         echo '<div style="color:red;">' .array_shift($errors).'</div><hr>';
     }
 }
-include 'templates/header_index.php';
+include 'header_index.php';
 ?>
 <div class="container">
     <h1>Registration</h1>
@@ -76,3 +76,5 @@ include 'templates/header_index.php';
     <div class="buttonedorde"><input type="submit" value="Sign up" name="submit_reg"></div>
 </form>
 </div>
+
+<?php include 'footer_index.php'; ?>

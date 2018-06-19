@@ -1,5 +1,5 @@
 <?php require 'settings_db_rb.php';
-if(!isset($_SESSION['logged_user'])){
+if(isset($_SESSION['logged_user'])){
     header('Location: /');
 }
 $data = $_POST;
@@ -22,7 +22,7 @@ if(isset($data['submit_login'])){
         echo '<div style="color:red;">' .array_shift($errors).'</div><hr>';
     }
 }
-include 'templates/header_index.php';
+include 'header_index.php';
 ?>
 
 <div class="container">
@@ -33,3 +33,5 @@ include 'templates/header_index.php';
     <div class="buttonedorde"><input type="submit" value="Войти" name="submit_login"></div>
 </form>
 </div>
+
+<?php include 'footer_index.php'; ?>

@@ -1,5 +1,5 @@
 <?php include 'settings_db_rb.php';
-include 'templates/header_index.php';
+include 'header_index.php';
 /*
 if (isset($_SESSION['logged_user'])) :
 ?>
@@ -29,7 +29,7 @@ $posts = R::find('posts', ' WHERE status = 1 LIMIT :limit ',
 
 foreach ($posts as $post_row){
 echo ('<h4><a href="post.php?id='.$post_row["id"].'">'.$post_row['title'].'</a></h4>');
-echo ('<p>'.$post_row['description'].'</p>');
+echo ('<div class="text-justify"><p>'.$post_row['description'].'</p></div>');
 }
-include 'templates/footer_index.php';
+include 'footer_index.php';
 

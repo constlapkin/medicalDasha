@@ -1,4 +1,4 @@
-<?php include 'settings_db_rb.php';
+<?php include '../settings_db_rb.php';
 if(!isset($_SESSION['logged_user']) or $_SESSION['logged_user']['category_users_id'] == 1){
     header('Location: /');
 }
@@ -11,9 +11,8 @@ if(!isset($_SESSION['logged_user']) or $_SESSION['logged_user']['category_users_
  */
 $id = $_GET['id'];
 if(!$id){
-    header('Location: /admin.php');
+    header('Location: admin_posts.php');
 }
-include 'templates/header_admin.php';
 
 if (isset($_SESSION['logged_user'])) {
 
@@ -41,20 +40,18 @@ if (isset($_SESSION['logged_user'])) {
             $post->title = $data['title'];
             $post->description = $data['description'];
             $post->text = $data['text'];
-            $post->user_id = $_SESSION['logged_user']->id;
-            $post->category_posts_id = 1;
             $post->status = $data['status'];
-            $post->change_date = date("Y-m-d");
+            $post->change_date = date("Y-m-d h:m:s");
             $post->create_date = $data['create_date'];
             if($post->status == 1) {
-                $post->publish_date = date("Y-m-d");;
+                $post->publish_date = date("Y-m-d h:m:s");;
             }
             else{
                 $post->publish_date = Null;
             }
             R::store($post);
 
-            echo '<div style="color:green;">Success!</div><hr>';
+            header('Location: admin/admin_posts.php');
         } else {
             echo '<div style="color:red;">'.array_shift($errors).'</div><hr>';
         }
@@ -63,15 +60,16 @@ if (isset($_SESSION['logged_user'])) {
     {
         $post = R::load('posts', $data['id']);
         R::trash($post);
+        header('Location: admin/admin_posts.php');
     }
 }
-
+include 'header_admin.php';
 if ($id and isset($_SESSION['logged_user'])):
     ?>
 <div class="container">
     <p><a href="admin_posts.php"><- Back</a></p>
     <br>
-    <form action="edit.php" method="post">
+    <form action="edit_post.php" method="post">
         <input type="hidden" name="id" value="<? echo ($post['id']) ?>"><br>
         <input type="hidden" name="create_date" value="<? echo ($post['create_date']) ?>"><br>
         <label>Title: </label><br><input type="text" name="title" value="<? echo ($post['title'])?>"><br>

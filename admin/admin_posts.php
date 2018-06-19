@@ -1,8 +1,8 @@
-<?php include 'settings_db_rb.php';
+<?php include '../settings_db_rb.php';
 if(!isset($_SESSION['logged_user']) or $_SESSION['logged_user']['category_users_id'] == 1){
     header('Location: /');
 }
-include 'templates/header_admin.php';
+include 'header_admin.php';
 
 
 if (isset($_SESSION['logged_user'])) {
@@ -17,17 +17,17 @@ if (isset($_SESSION['logged_user'])) {
     <br>
     <div class="row">
         <div class="col-md-6"><h3>News</h3></div>
-        <div class="col-md-6"><div class="row text-right"><a href="add.php">Add</a></div></div>
+        <div class="col-md-6"><div class="row text-right"><a href="add_post.php">Add</a></div></div>
     </div>
     <hr>
     <br>
     <div class="row">
         <div class="col-md-1">ID|Status</div>
-        <div class="col-md-2">Title</a></div>
+        <div class="col-md-2">Title</div>
         <div class="col-md-5">Description</div>
         <div class="col-md-2">Date of create</div>
         <div class="col-md-2">Date of Publish</div>
-        <hr>
+
     </div>
     <hr>
     <?php
@@ -50,7 +50,6 @@ if (isset($_SESSION['logged_user'])) {
         <div class="col-md-5">'.$post_row['description'].'</div>
         <div class="col-md-2">'.$post_row['create_date'].'</div>
         <div class="col-md-2">'.$post_row['publish_date'].'</div>
-        
     </div>
     <hr>
 
