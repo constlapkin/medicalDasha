@@ -3,14 +3,38 @@ if(!isset($_SESSION['logged_user']) or $_SESSION['logged_user']['category_users_
     header('Location: /');
 }
 include 'header_admin.php';
-
+$curPage = $_GET['page'];
 $limit = 5;
-$users = R::find('users', ' LIMIT :limit ',
-    array(
-        ':limit' => $limit
-    ));
-$type = R::find('dict_users');
-?>
+if (!isset($curPage)) {$curPage = 1;}
+$a_direct = 'admin_persons.php?page=';
+$a_direct_1 = 'admin_persons.php?page=1';
+$count = R::getCell("Select Count(*) from users;");
+if($count % $limit > 0){
+    $pages = ceil($count / $limit);
+}
+else {
+    $pages = $count / $limit;
+}
+
+if ($curPage > $pages){$curPage = $pages;}
+if ($curPage < 1){$curPage = 1;}
+
+
+if($curPage > 1){
+    $start = ($curPage - 1) * $limit;
+}
+else {
+    $start = 0;
+}
+
+
+    $users = R::find('users', ' LIMIT :start, :limit ',
+        array(
+            ':start' => $start,
+            ':limit' => $limit
+        ));
+$type = R::find('dictusers');
+    ?>
 <div class="container">
     <br>
     <div class="row">
@@ -54,5 +78,44 @@ $type = R::find('dict_users');
     }
 
     ?>
+    <?php if ($pages != 1): ?>
+        <? if ($curPage > 1): ?>
+            <a href="<? echo $a_direct; $nextPage = $curPage - 1; echo ($nextPage)?>"> < </a>
+        <? endif; ?>
+        <a href="<? echo $a_direct_1; ?>"> <? if ($curPage == 1) : ?><b> 1 </b> <? else : ?> 1 <? endif; ?></a>
+        <?php
+
+        if (($curPage - 2 > 1) and ($curPage + 2 < $pages)) {
+            print (' .. <a href="'.$a_direct.($curPage-1).'">' . ($curPage - 1) . '</a> <a href="'.$a_direct.$curPage.'"><b>' . $curPage . '</b></a> <a href="'.$a_direct.($curPage + 1).'">' . ($curPage + 1) . '</a> .. ');
+        }
+        elseif (($curPage - 2 > 1) and ($curPage + 1 < $pages)) {
+            print (' .. <a href="'.$a_direct.($curPage-1).'">' . ($curPage - 1) . '</a> <a href="'.$a_direct.$curPage.'"><b>' . $curPage . '</b></a> <a href="'.$a_direct.($curPage + 1).'">'.($curPage + 1).'</a> ');
+        }
+        elseif (($curPage - 2 > 1)  and ($curPage != $pages)) {
+            print (' .. <a href="'.$a_direct.($curPage-1).'">' . ($curPage - 1) . '</a> <a href="'.$a_direct.$curPage.'"><b>' . $curPage . '</b></a> ');
+        }
+        elseif (($curPage - 2 > 1) and ($curPage == $pages)){
+            print (' .. <a href="'.$a_direct.($curPage-1).'">' . ($curPage - 1) . '</a> ');
+        }
+        elseif (($curPage - 1 > 1) and ($curPage + 2 < $pages)) {
+            print (' <a href="'.$a_direct.($curPage-1).'">' . ($curPage - 1) . '</a> <a href="'.$a_direct.$curPage.'"><b>' . $curPage . '</b></a> <a href="'.$a_direct.($curPage + 1).'">' . ($curPage + 1) . '</a> .. ');
+        }
+        elseif (($curPage + 2 < $pages) and ($curPage != 1)) {
+            print (' <a href="'.$a_direct.$curPage.'"><b>' . $curPage . '</b></a> <a href="'.$a_direct.($curPage + 1).'">' . ($curPage + 1) . '</a> .. ');
+        }
+        elseif (($curPage + 2 < $pages) and ($curPage == 1)) {
+            print (' <a href="'.$a_direct.($curPage + 1).'">' . ($curPage + 1) . '</a> .. ');
+        }
+
+        ?>
+
+
+        <a href="<? echo $a_direct; echo ($pages) ?>"> <? if ($curPage == $pages) : ?><b><? echo ($pages) ?></b> <? else : ?> <? echo ($pages) ?> <? endif; ?></a>
+
+        <? if ($curPage < $pages) : ?>
+            <a href="<? echo $a_direct; $nextPage = $curPage + 1; echo ($nextPage)?>"> > </a>
+        <? endif; ?>
+    <? endif; ?>
 </div>
+
 <?php include 'footer_admin.php'; ?>

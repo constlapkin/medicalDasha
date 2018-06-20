@@ -39,7 +39,7 @@ include 'header_admin.php';
         ?>
     </div>
     <?php
-    if ($_SESSION['logged_user']['category_users_id'] >= 4):
+    if ($_SESSION['logged_user']['category_users_id'] == 4):
     ?>
     <div class="row text-center">
 

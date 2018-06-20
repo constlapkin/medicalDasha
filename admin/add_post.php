@@ -25,7 +25,7 @@ if (isset($data['submit_create_post'])) {
         $post->change_date = Null;
         $post->publish_date = Null;
         R::store($post);
-        header('Location: admin/admin_posts.php');
+        header('Location: admin_posts.php');
 
     } else {
         include 'header_admin.php';
@@ -36,8 +36,11 @@ if (isset($data['submit_create_post'])) {
 include 'header_admin.php';
 ?>
 <div class="container">
-    <p class="back"><a href="admin_posts.php"><i data-feather="chevron-left"></i>Back</a></p>
     <br>
+    <div class="row">
+        <div class="col-md-4"><p class="back"><a href="admin_posts.php"><i data-feather="chevron-left"></i>Back</a></p></div>
+        <div class="col-md-4"><h3 class="text-center">Add Post</h3></div>
+    </div>
     <form action="add_post.php" method="post"><br>
         <label>Title: </label><br><input type="text" name="title"><br><br>
         <label>Description: </label><textarea id="editor_description" name="description"></textarea><br>

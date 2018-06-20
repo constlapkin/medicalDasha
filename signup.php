@@ -42,7 +42,6 @@ if(isset($data['submit_reg'])){
         $user->phone = $data['phone'];
         $user->email = $data['email'];
         $user->password = password_hash($data['password'], PASSWORD_DEFAULT);
-        $user->join_date = date("Y-m-d");
         $user->category_users_id = 1;
         R::store($user);
         $user_session = R::findOne('users', 'email = ?', array($data['email']));

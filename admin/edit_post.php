@@ -42,7 +42,7 @@ if (isset($_SESSION['logged_user'])) {
             $post->text = $data['text'];
             $post->status = $data['status'];
             $post->change_date = date("Y-m-d h:m:s");
-            $post->create_date = $data['create_date'];
+
             if($post->status == 1) {
                 $post->publish_date = date("Y-m-d h:m:s");;
             }
@@ -51,7 +51,7 @@ if (isset($_SESSION['logged_user'])) {
             }
             R::store($post);
 
-            header('Location: admin/admin_posts.php');
+            header('Location: admin_posts.php');
         } else {
             echo '<div style="color:red;">'.array_shift($errors).'</div><hr>';
         }
@@ -60,7 +60,7 @@ if (isset($_SESSION['logged_user'])) {
     {
         $post = R::load('posts', $data['id']);
         R::trash($post);
-        header('Location: admin/admin_posts.php');
+        header('Location: admin_posts.php');
     }
 }
 include 'header_admin.php';
@@ -71,20 +71,17 @@ if ($id and isset($_SESSION['logged_user'])):
     <br>
     <form action="edit_post.php" method="post">
         <input type="hidden" name="id" value="<? echo ($post['id']) ?>"><br>
-        <input type="hidden" name="create_date" value="<? echo ($post['create_date']) ?>"><br>
         <label>Title: </label><br><input type="text" name="title" value="<? echo ($post['title'])?>"><br>
         <label>Description: </label><textarea name="description" id="editor_description"><? echo ($post['description'])?></textarea><br>
         <label>Text: </label><textarea name="text" id="editor_text"><? echo ($post['text'])?></textarea>
 
-        <label>Status: </label>
-        <select name="status">
+        <label>Status: </label><br>
+        <select class="select-admin" name="status">
             <option value="1">Publish</option>
             <option value="0">Notes</option>
         </select><br>
-        <div class="buttonedorde">
-        <input type="submit" value="Edit post" name="submit_edit">
-        <input type="submit" value="Delete post" name="submit_delete">
-        </div>
+        <input class="send-admin" type="submit" value="Edit post" name="submit_edit">
+        <input class="send-admin" type="submit" value="Delete post" name="submit_delete">
         <script type="application/javascript">
             CKEDITOR.replace('editor_description');
             CKEDITOR.replace('editor_text');
