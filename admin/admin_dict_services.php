@@ -11,18 +11,16 @@ $dicts = R::find('dict_services', ' LIMIT :limit ',
     ));
 ?>
 <div class="container">
-    <p><a href="admin.php"><- Back</a></p>
     <br>
     <div class="row">
-        <div class="col-md-6"><h3>Dictionary of Services</h3></div>
-        <div class="col-md-6"><div class="row text-right"><a href="add_service.php">Add</a></div></div>
+        <div class="col-md-4"><p class="back"><a href="admin.php"><i data-feather="chevron-left"></i>Back</a></p></div>
+        <div class="col-md-4"><h3 class="text-center"><i data-feather="edit"></i> Dictionary of Services</h3></div>
+        <div class="col-md-4"><a href="add_service.php"><p class="add"><i data-feather="plus"></i>Add</p></a></div>
     </div>
     <hr>
-    <br>
     <div class="row">
         <div class="col-md-1">ID</div>
-        <div class="col-md-2">Type</div>
-
+        <div class="col-md-11">Type</div>
     </div>
     <hr>
     <?php
@@ -30,10 +28,11 @@ $dicts = R::find('dict_services', ' LIMIT :limit ',
             echo ('
                 <div class="row">
                     <div class="col-md-1">'.$dict_row['id'].'</div>
-                    <div class="col-md-2"><a href="edit_services.php?id='.$dict_row["id"].'">'.$dict_row['type'].'</a></div>
+                    <div class="col-md-11"><a href="edit_services.php?id='.$dict_row["id"].'">'.$dict_row['type'].'</a></div>
                 </div>
                 <hr>
             ');
         }
     ?>
 </div>
+<?php include 'footer_admin.php'; ?>

@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40d1bd07-0f8f-45ae-9011-acc24a80a638" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/admin_analysis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/admin_dict_analysis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/admin_dict_services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/admin_persons.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/admin_services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/footer_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/css/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/signin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/header_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin_analysis.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_analysis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin_dict_analysis.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_dict_analysis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin_dict_services.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_dict_services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin_persons.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_persons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin_services.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,26 +40,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add_post.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/add_post.php">
+      <file leaf-file-name="admin_services.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/admin_services.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="245">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit_post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/edit_post.php">
+      <file leaf-file-name="admin_posts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/admin_posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="74" column="83" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="194">
+              <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_persons.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/admin_persons.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_dict_services.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/admin_dict_services.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_dict_analysis.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/admin_dict_analysis.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_analysis.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/admin_analysis.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -74,6 +100,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -116,7 +143,6 @@
         <option value="$PROJECT_DIR$/templates/header.php" />
         <option value="$PROJECT_DIR$/templates/about.html" />
         <option value="$PROJECT_DIR$/templates/simple_head.html" />
-        <option value="$PROJECT_DIR$/templates/css/main.css" />
         <option value="$PROJECT_DIR$/templates/footer.php" />
         <option value="$PROJECT_DIR$/admin_posts.php" />
         <option value="$PROJECT_DIR$/templates/header_admin.php" />
@@ -124,7 +150,6 @@
         <option value="$PROJECT_DIR$/edit.php" />
         <option value="$PROJECT_DIR$/add.php" />
         <option value="$PROJECT_DIR$/templates/header_index.php" />
-        <option value="$PROJECT_DIR$/admin/header_admin.php" />
         <option value="$PROJECT_DIR$/admin/add.php" />
         <option value="$PROJECT_DIR$/admin/edit.php" />
         <option value="$PROJECT_DIR$/signup.php" />
@@ -132,12 +157,19 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/post.php" />
         <option value="$PROJECT_DIR$/admin/admin.php" />
-        <option value="$PROJECT_DIR$/admin/admin_dict_analysis.php" />
-        <option value="$PROJECT_DIR$/admin/admin_dict_services.php" />
+        <option value="$PROJECT_DIR$/footer_index.php" />
+        <option value="$PROJECT_DIR$/templates/css/main.css" />
+        <option value="$PROJECT_DIR$/admin/header_admin.php" />
+        <option value="$PROJECT_DIR$/admin/footer_admin.php" />
+        <option value="$PROJECT_DIR$/admin/add_post.php" />
+        <option value="$PROJECT_DIR$/admin/edit_post.php" />
+        <option value="$PROJECT_DIR$/templates/css/admin.css" />
         <option value="$PROJECT_DIR$/admin/admin_posts.php" />
-        <option value="$PROJECT_DIR$/admin/admin_persons.php" />
-        <option value="$PROJECT_DIR$/admin/admin_analysis.php" />
         <option value="$PROJECT_DIR$/admin/admin_services.php" />
+        <option value="$PROJECT_DIR$/admin/admin_persons.php" />
+        <option value="$PROJECT_DIR$/admin/admin_dict_services.php" />
+        <option value="$PROJECT_DIR$/admin/admin_dict_analysis.php" />
+        <option value="$PROJECT_DIR$/admin/admin_analysis.php" />
       </list>
     </option>
   </component>
@@ -174,6 +206,17 @@
               <item name="medical.ru" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="medical.ru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medical.ru" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medical.ru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medical.ru" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -185,6 +228,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -227,6 +271,7 @@
       <workItem from="1529336873062" duration="405000" />
       <workItem from="1529383482222" duration="622000" />
       <workItem from="1529384283566" duration="13453000" />
+      <workItem from="1529460239856" duration="5777000" />
     </task>
     <task id="LOCAL-00001" summary="Авторизация, регистрация, выход из аккаунта, панель управления с возможностью добавления, удаления и редактирования статей">
       <created>1528000001560</created>
@@ -267,10 +312,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71312000" />
+    <option name="totallyTimeSpent" value="77089000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -279,7 +324,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49924356" weight="0.32954547" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20801815" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.21104388" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32980332" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32792208" />
@@ -315,20 +360,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/header_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/header_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -473,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin.html" />
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -501,24 +525,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/header_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header_index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -570,65 +580,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin_dict_services.php">
+    <entry file="file://$PROJECT_DIR$/footer_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="466">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin_dict_analysis.php">
+    <entry file="file://$PROJECT_DIR$/admin/footer_admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="34">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/header_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="114" column="21" lean-forward="true" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/edit_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1282">
+          <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin_persons.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="30" />
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_dict_services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_dict_analysis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin_analysis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin_services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin_posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/edit_post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="83" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add_post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="17" column="89" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
         </state>
       </provider>
     </entry>

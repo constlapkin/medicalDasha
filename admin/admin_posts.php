@@ -13,14 +13,13 @@ if (isset($_SESSION['logged_user'])) {
         ));
 ?>
 <div class="container">
-    <p><a href="admin.php"><- Back</a></p>
     <br>
     <div class="row">
-        <div class="col-md-6"><h3>News</h3></div>
-        <div class="col-md-6"><div class="row text-right"><a href="add_post.php">Add</a></div></div>
+        <div class="col-md-4"><p class="back"><a href="admin.php"><i data-feather="chevron-left"></i>Back</a></p></div>
+        <div class="col-md-4"><h3 class="text-center"><i data-feather="edit"></i> News</h3></div>
+        <div class="col-md-4"><a href="add_post.php"><p class="add"><i data-feather="plus"></i>Add</p></a></div>
     </div>
     <hr>
-    <br>
     <div class="row">
         <div class="col-md-1">ID|Status</div>
         <div class="col-md-2">Title</div>
@@ -46,7 +45,7 @@ if (isset($_SESSION['logged_user'])) {
 
     <div class="row">
         <div class="col-md-1">'.$post_row['id'].'|'.$post_row['status'].'</div>
-        <div class="col-md-2"><a href="edit.php?id='.$post_row["id"].'">'.$post_row['title'].'</a></div>
+        <div class="col-md-2"><a href="edit_post.php?id='.$post_row["id"].'">'.$post_row['title'].'</a></div>
         <div class="col-md-5">'.$post_row['description'].'</div>
         <div class="col-md-2">'.$post_row['create_date'].'</div>
         <div class="col-md-2">'.$post_row['publish_date'].'</div>
@@ -59,3 +58,4 @@ if (isset($_SESSION['logged_user'])) {
 
 ?>
 </div>
+<?php include 'footer_admin.php'; ?>

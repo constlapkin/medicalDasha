@@ -100,12 +100,6 @@ input[type=submit]:hover {
 padding-right: 50%;
     text-align: justify;
 }
-.buttonedorde{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top:20px;
-    margin-bottom: 50px;
-}
 
 .navbar-inverse .navbar-brand{
   color: #fff;

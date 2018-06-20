@@ -67,7 +67,7 @@ include 'header_admin.php';
 if ($id and isset($_SESSION['logged_user'])):
     ?>
 <div class="container">
-    <p><a href="admin_posts.php"><- Back</a></p>
+    <p class="back"><a href="admin_posts.php"><i data-feather="chevron-left"></i>Back</a></p>
     <br>
     <form action="edit_post.php" method="post">
         <input type="hidden" name="id" value="<? echo ($post['id']) ?>"><br>
@@ -94,3 +94,4 @@ if ($id and isset($_SESSION['logged_user'])):
 <?php
 endif;
 ?>
+<?php include 'footer_admin.php'; ?>

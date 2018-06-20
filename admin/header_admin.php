@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="../templates/css/bootstrap.css">
     <link rel="stylesheet" href="../templates/css/font-awesome.min.css">
     <link rel="stylesheet" href="../templates/css/main.css">
+    <link rel="stylesheet" href="../templates/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="/ckeditor/ckeditor.js"></script>
 </head>
 <body>

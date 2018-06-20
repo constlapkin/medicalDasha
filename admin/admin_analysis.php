@@ -12,11 +12,11 @@ $analysis = R::find('analysis', ' LIMIT :limit ',
 $type = R::find('dict_analysis');
 ?>
 <div class="container">
-    <p><a href="admin.php"><- Back</a></p>
     <br>
     <div class="row">
-        <div class="col-md-6"><h3>Analysis</h3></div>
-        <div class="col-md-6"><div class="row text-right"><a href="add_analysis.php">Add</a></div></div>
+        <div class="col-md-4"><p class="back"><a href="admin.php"><i data-feather="chevron-left"></i>Back</a></p></div>
+        <div class="col-md-4"><h3 class="text-center"><i data-feather="edit"></i> Analysis</h3></div>
+        <div class="col-md-4"><a href="add_analysis.php"><p class="add"><i data-feather="plus"></i>Add</p></a></div>
     </div>
     <hr>
     <br>
@@ -64,3 +64,4 @@ $type = R::find('dict_analysis');
 
     ?>
 </div>
+<?php include 'footer_admin.php'; ?>
