@@ -20,21 +20,23 @@
             <ul class="nav navbar-inverse navbar-nav navbar-right">
 
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="templates/about.html">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Analysis</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="about.php">About us</a></li>
+                <li><a href="dict_services.php">Services</a></li>
+                <li><a href="dict_analysis.php">Analysis</a></li>
+
                 <?php
                 if (isset($_SESSION['logged_user'])) :
                     if($_SESSION['logged_user']['category_users_id'] != 1) :
                 ?>
                     <li><a href="admin/admin.php">Admin Panel</a></li>
                     <?php endif; ?>
+                    <li><a href="order.php">Order</a></li>
                     <li><a href="signout.php">Sign Out</a></li>
 
                 <?php
                 else :
                 ?>
+
                 <li><a href="signup.php">Sign Up</a></li>
 
                 <li><a href="signin.php">Sign In</a></li>

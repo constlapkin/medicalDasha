@@ -13,7 +13,7 @@ include 'header_admin.php';
 <br>
 <div class="container">
     <?php
-    if($_SESSION['logged_user']['category_users_id'] >= 3) :
+    if($_SESSION['logged_user']['category_users_id'] >= 3 and $_SESSION['logged_user']['category_users_id'] < 5) :
     ?>
     <div class="row">
         <div class="col-md-12">Choose what you want change</div>
@@ -28,15 +28,18 @@ include 'header_admin.php';
         <div class="col-md-6"><a href="add_post.php"><h4>Add News</h4></a></div>
         <div class="col-md-6"><a href="edit_post.php"><h4>Edit News</h4></a></div>
         <?php
-        elseif ($_SESSION['logged_user']['category_users_id'] >= 3) :
+        elseif ($_SESSION['logged_user']['category_users_id'] >= 3 and $_SESSION['logged_user']['category_users_id'] < 5) :
         ?>
         <div class="col-md-3"><a href="admin_posts.php"><h4>News</h4></a></div>
         <div class="col-md-3"><a href="admin_services.php"><h4>Services</h4></a></div>
         <div class="col-md-3"><a href="admin_analysis.php"><h4>Analysis</h4></a></div>
         <div class="col-md-3"><a href="admin_persons.php"><h4>Persons</h4></a></div>
+            <a href="admin_orders.php"<h4>Orders</h4></a>
         <?php
-        endif;
+        elseif ($_SESSION['logged_user']['category_users_id'] == 5):
         ?>
+            <a href="admin_orders.php"<h4>Orders</h4></a>
+        <? endif; ?>
     </div>
     <?php
     if ($_SESSION['logged_user']['category_users_id'] == 4):

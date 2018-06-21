@@ -377,3 +377,9 @@ padding-left: 200px;
    overflow: hidden;
  }
  .text:focus, button:focus ~ .text {height: auto;}
+textarea.order {
+    width:100%;
+}
+p.price {
+    color: orange;
+}

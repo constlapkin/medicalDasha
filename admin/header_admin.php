@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
-
-
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="/ckeditor/ckeditor.js"></script>
 </head>
@@ -26,10 +24,16 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-inverse navbar-nav navbar-right">
                 <li class="active"><a href="admin.php">Admin Panel</a></li>
-                <li><form action="admin_posts.php" method="post"><input type="submit" name="submit_create" value="News"></form></li>
-                <li><a href="#">\</a></li>
-                <li><a href="#">\</a></li>
-                <li><a href="#">\</a></li>
+                <? if ($_SESSION['logged_user']['category_users_id'] == 5) : ?>
+                    <li><a href="admin_orders.php">Orders</a></li>
+                <? else: ?>
+                <li><a href="admin_posts.php">News</a></li>
+                <? endif; ?>
+                <? if ($_SESSION['logged_user']['category_users_id'] >= 3 and $_SESSION['logged_user']['category_users_id'] < 5) : ?>
+                <li><a href="admin_analysis.php">Analysis</a></li>
+                <li><a href="admin_services.php">Services</a></li>
+                <li><a href="admin_persons.php">Persons</a></li>
+                <? endif; ?>
                 <li><a href="/">Web-site</a></li>
                 <li><a href="../signout.php">Sign Out</a></li>
             </ul>
