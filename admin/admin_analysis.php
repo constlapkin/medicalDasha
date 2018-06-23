@@ -36,6 +36,7 @@ $type = R::find('dictanalysis');
 <div class="container">
     <br>
     <div class="row">
+
         <div class="col-md-4"><p class="back"><a href="admin.php"><i data-feather="chevron-left"></i>Back</a></p></div>
         <div class="col-md-4"><h3 class="text-center"><i data-feather="edit"></i> Analysis</h3></div>
         <div class="col-md-4"><a href="add_analysis.php"><p class="add"><i data-feather="plus"></i>Add</p></a></div>

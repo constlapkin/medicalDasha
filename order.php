@@ -31,7 +31,18 @@ if (isset($data['submit_create_order'])) {
 
 include 'header_index.php';
 ?>
+
+    <div class="about">
+        <div class="container information">
+            <div class="row centered">
+                <br><br>
+                <h3>New Order</h3>
+            </div>
+        </div>
+    </div>
+
 <div class="container">
+
     <br>
     <form action="order.php" method="post"><br>
         <label>Text: </label><textarea class="order" name="text"></textarea><br>
@@ -41,5 +52,5 @@ include 'header_index.php';
     </form>
 </div>
 
-
+<br> <br>
 <? include 'footer_index.php'; ?>

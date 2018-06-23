@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="templates/css/bootstrap.css">
     <link rel="stylesheet" href="templates/css/font-awesome.min.css">
     <link rel="stylesheet" href="templates/css/main.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 <a href="/" class="topbutton"><i class="fa fa-chevron-up"></i></a>
@@ -59,6 +60,3 @@
 
     </div>
 </div>
-
-<div class="container">
-    <div id="inf">

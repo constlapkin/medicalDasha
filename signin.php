@@ -25,13 +25,23 @@ if(isset($data['submit_login'])){
 include 'header_index.php';
 ?>
 
+
+<div class="about">
+    <div class="container information">
+        <div class="row centered">
+            <br><br>
+            <h3>Welcome!</h3><br>
+        </div>
+    </div>
+</div>
+
 <div class="container">
-    <h1>Welcome!</h1> <br>
 <form action="signin.php" method="post">
     <label>E-mail</label><br><input type="email" name="email" value="<?php echo @$data['email'] ?>"><br>
     <label>Password </label><br><input type="password" name="password" value="<?php echo @$data['password'] ?>"><br>
-    <div class="buttonedorde"><input type="submit" value="Войти" name="submit_login"></div>
+    <br><input type="submit" value="Войти" name="submit_login">
 </form>
 </div>
-
+<br><br>
 <?php include 'footer_index.php'; ?>
+

@@ -7,9 +7,21 @@ $analysis = R::findOne('analysis', 'where id = :id',
     array(
         ':id' => $id
     ));
+?>
 
+<div class="about">
+    <div class="container information">
+        <div class="row centered">
+            <br><br>
+            <h3><? echo $analysis['title']; ?></h3>
+        </div>
+    </div>
+</div>
+<?
+echo('<div class="container">');
+echo('<div class="text-justify">');
 echo('
-    <h3>'.$analysis['title'].'</h3>
+    
     <h4>Description</h4>
     <p>'.$analysis['description'].'</p>
      <h4>Preparation</h4>
@@ -25,9 +37,9 @@ if ($analysis['time'] != 0 and isset($analysis['time'])) : ?>
 
 <? endif;
 
+echo('</div>');
 
-
-
+echo('</div>');
 echo('<br>');
 
 include 'footer_index.php';

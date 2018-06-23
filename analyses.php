@@ -7,15 +7,30 @@ $analyses = R::find('analysis', 'where category_analysis_id = :dict_id',
     array(
         ':dict_id' => $id
     ));
-echo ('<br><br><h3>Choose type service: </h3>');
+
+?>
+
+<div class="about">
+    <div class="container information">
+        <div class="row centered">
+            <br><br>
+            <h1>Choose analyses:</h1>
+        </div>
+    </div>
+</div>
+<?
+echo('<div class="container">');
+    echo('<div class="text-justify">');
+
+
 foreach ($analyses as $analysis_row) {
     echo('
-    <a href="analysis.php?id='.$analysis_row['id'].'">'.$analysis_row['title'].'</a>
+    <div class="dict"><i data-feather="arrow-down-right"></i><a href="analysis.php?id='.$analysis_row['id'].'">'.$analysis_row['title'].'</a></div>
     ');
 }
 
-
-
+echo('</div>');
+echo('</div>');
 echo('<br>');
 
 include 'footer_index.php';

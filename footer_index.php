@@ -1,3 +1,4 @@
+
 </div></div>
 
 
@@ -11,17 +12,21 @@
                     Saturday <span class="letter">9:00am - 16:00pm</span><br>
                     Sunday <span class="letter">9:00am - 14:00pm</span><br></p>
             </div>
-            <h4> Follow Us</h4>
+            <h4 style="padding-left: 20px"> Follow Us</h4>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-vk"></i></a>
 
             <div class="news">
                 <h4> Latest News</h4>
-                <p>The Mayo Clinic Recognizes Digital Scholarship
-                    <br>June 20, 2017</p>
-                <p>Impact Pediatric Health: A Game Changer
-                    <br>June 19, 2017</p>
+                <?
+                $posts = R::find('posts', ' LIMIT 2 ',
+                    array());
+                 foreach ($posts as $post) :
+                 ?>
+                     <p><a href="post.php?id=<? echo($post['id']) ?>"><? echo($post['title']); ?></a>
+                    <br><? echo($post['create_date']); ?></p>
+                <? endforeach; ?>
             </div>
 
         </div>

@@ -59,21 +59,62 @@ if(isset($data['submit_reg'])){
 }
 include 'header_index.php';
 ?>
+    <script type="text/javascript">
+        function checkPassword(form) {
+            var password = form.password.value; // Получаем пароль из формы
+            var s_letters = "qwertyuiopasdfghjklzxcvbnm"; // Буквы в нижнем регистре
+            var b_letters = "QWERTYUIOPLKJHGFDSAZXCVBNM"; // Буквы в верхнем регистре
+            var digits = "0123456789"; // Цифры
+            var specials = "!@#$%^&*()_-+=\|/.,:;[]{}"; // Спецсимволы
+            var is_s = false; // Есть ли в пароле буквы в нижнем регистре
+            var is_b = false; // Есть ли в пароле буквы в верхнем регистре
+            var is_d = false; // Есть ли в пароле цифры
+            var is_sp = false; // Есть ли в пароле спецсимволы
+            for (var i = 0; i < password.length; i++) {
+                /* Проверяем каждый символ пароля на принадлежность к тому или иному типу */
+                if (!is_s && s_letters.indexOf(password[i]) != -1) is_s = true;
+                else if (!is_b && b_letters.indexOf(password[i]) != -1) is_b = true;
+                else if (!is_d && digits.indexOf(password[i]) != -1) is_d = true;
+                else if (!is_sp && specials.indexOf(password[i]) != -1) is_sp = true;
+            }
+            var rating = 0;
+            var text = "";
+            if (is_s) rating++; // Если в пароле есть символы в нижнем регистре, то увеличиваем рейтинг сложности
+            if (is_b) rating++; // Если в пароле есть символы в верхнем регистре, то увеличиваем рейтинг сложности
+            if (is_d) rating++; // Если в пароле есть цифры, то увеличиваем рейтинг сложности
+            if (is_sp) rating++; // Если в пароле есть спецсимволы, то увеличиваем рейтинг сложности
+            /* Далее идёт анализ длины пароля и полученного рейтинга, и на основании этого готовится текстовое описание сложности пароля */
+            if (password.length < 6 && rating < 3){ text = "Слишком простой пароль";  alert(text); return false;}
+            else if (password.length >= 6 && rating == 1) { text = "Слишком простой пароль";  alert(text); return false;}
+
+            // Выводим итоговую сложность пароля
+             // Форму не отправляем
+        }
+    </script>
+<div class="about">
+    <div class="container information">
+        <div class="row centered">
+            <br><br>
+            <h3>Sign up!</h3>
+        </div>
+    </div>
+</div>
+
 <div class="container">
-    <h1>Registration</h1>
+
 
     <p class="reg">Registration is needed to order some of our services and analyzes. Also, registration can allow you to speed up
         the work of feedback in case you have any questions.</p>
 
-<form action="signup.php" method="post">
+<form action="signup.php" method="post" onsubmit="return checkPassword(this);">
     <label>First Name </label><br/><input type="text" value="<?php echo @$data['first_name'] ?>" name="first_name"><br/>
     <label>Last Name </label><br/><input type="text" value="<?php echo @$data['last_name'] ?>" name="last_name"><br/>
     <label>Phone number </label><br/><input type="number" value="<?php echo @$data['phone'] ?>" name="phone"><br/>
     <label>E-mail </label><br/><input type="email" value="<?php echo @$data['email'] ?>" name="email"><br/>
     <label>Password </label><br/><input type="password" value="<?php echo @$data['password'] ?>" name="password"><br/>
     <label>Password again </label><br/><input type="password" value="<?php echo @$data['password_check'] ?>" name="password_check"><br/>
-    <div class="buttonedorde"><input type="submit" value="Sign up" name="submit_reg"></div>
+    <br> <input type="submit" value="Sign up" name="submit_reg">
 </form>
 </div>
-
+<br><br>
 <?php include 'footer_index.php'; ?>

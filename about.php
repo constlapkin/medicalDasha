@@ -23,53 +23,70 @@ include 'header_index.php'; ?>
           The Private Heart & Vascular Centre is home<br>
           to the largest group of specialist and sub-specialist Consultants. </p><br>
            </div>
-      </div>
+              <br><br>
+              <hr>
+
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A78c6d7a002d0ef1ce20bfbc8ad8f66a272ddb3fee3f5a6b2a6362034b35b3c3e&amp;width=100%25&amp;height=638&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+
       <div class="container information">
         <div class="row centered">
              <hr>
                       <div class="col-xs-6">
                           <div class="ourmision">
+
                             <h1> Our Mision</h1><br>
-                            <p>Patients are cared for in an environment that supports<br>
-                              emotional as well as clinical needs. We offer innovative and<br>
-                              specialist treatments and specialist liaison nurses to support<br>
+
+                              <div class="text-justify">
+                            <p>Patients are cared for in an environment that supports
+                              emotional as well as clinical needs. We offer innovative and
+                              specialist treatments and specialist liaison nurses to support
                               the patient in their treatment journey.
                               <br>
                               <br>
-                              Consultant rooms and cardiology testing are also available at<br>
-                              our outreach clincs. These offer patients the convenience of<br>
-                              local access to routine consultation, and follow-up care so<br>
-                              you will always have access to us no matter where you are<br>
-                              based in the country.<br>  </p>
-
+                              Consultant rooms and cardiology testing are also available at
+                              our outreach clincs. These offer patients the convenience of
+                              local access to routine consultation, and follow-up care so
+                              you will always have access to us no matter where you are
+                              country.<br>  </p>
+                              </div>
                           </div>
                         </div>
+
                         <div class="col-xs-6">
                           <div class="ourmision">
                             <h1> Your Questions</h1><br>
-                            <p>What kind of services do you provide?</p>
+
                               <div class="block">
 
 
           <div class="centred">
           <div class="col-lg-4">
-            <i class="fa fa-check-circle-o fa-2x"></i>
-            <h4>Experienced</h4>
-            <p>Over thirrty years of service</p>
+              <i data-feather="mail"></i>
+            <h4>E-Mail</h4>
+              <div class="text-justify">
+            <p>You can ask what you are intere- sted in by email, as well as make an appointment with a doctor.</p>
+              </div>
           </div>
           <div class="col-lg-4">
-            <i class="fa fa-heart-o fa-2x"></i>
-            <h4>Motory</h4>
-            <p>A young, energetic team</p>
+              <i data-feather="navigation"></i>
+            <h4>Go</h4>
+              <div class="text-justify">
+            <p>You can come to us without an appointment at the reception, in case it is really necessary.</p>
+              </div>
           </div>
           <div class="col-lg-4">
-            <i class="fa fa-user-md fa-2x"></i>
-            <h4>Professional</h4>
-            <p>Working to get results</p>
+              <i data-feather="phone"></i>
+            <h4>Phone</h4>
+              <div class="text-justify">
+            <p>You can call us at any time. If necessary, our ambulance will pick you up.</p>
+              </div>
             </div>
           </div>
         </div>
         <br><br>
       </div>
                         </div></div></div>
+<br> <br>
 <? include 'footer_index.php' ?>
