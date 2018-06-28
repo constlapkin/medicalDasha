@@ -30,9 +30,7 @@ include 'header_admin.php';
     endif;
     ?>
     <div class="row text-center">
-        <?php
-        if($_SESSION['logged_user']['category_users_id'] == 2) :
-        ?>
+        <? if($_SESSION['logged_user']['category_users_id'] == 2) :        ?>
         <div class="col-md-3"><a href="add_post.php"><h4>Add News</h4></a></div>
         <div class="col-md-3"><a href="edit_post.php"><h4>Edit News</h4></a></div>
         <?php
@@ -42,20 +40,15 @@ include 'header_admin.php';
         <div class="col-md-3"><a href="admin_services.php"><h4>Services</h4></a></div>
         <div class="col-md-3"><a href="admin_analysis.php"><h4>Analysis</h4></a></div>
         <div class="col-md-3"><a href="admin_persons.php"><h4>Persons</h4></a></div>
-            <div class="col-md-3"><a href="admin_orders.php"><h4>Orders</h4></a></div>
+        <div class="col-md-3"><a href="admin_orders.php"><h4>Orders</h4></a></div>
         <?php
         elseif ($_SESSION['logged_user']['category_users_id'] == 5):
         ?>
             <div class="col-md-3"><a href="admin_orders.php"<h4>Orders</h4></a></div>
-        <? endif; ?>
-
-    <?php
-    if ($_SESSION['logged_user']['category_users_id'] == 4):
-    ?>
-
+        <? endif;
+    if ($_SESSION['logged_user']['category_users_id'] == 4):    ?>
         <div class="col-md-3"><a href="admin_dict_services.php"><h4>Dict of Services</h4></a></div>
         <div class="col-md-3"><a href="admin_dict_analysis.php"><h4>Dict of Analysis</h4></a></div>
-
     <?php
     endif;
     ?>

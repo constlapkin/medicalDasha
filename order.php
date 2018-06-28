@@ -20,7 +20,7 @@ if (isset($data['submit_create_order'])) {
         $order = R::dispense('orders');
         $order->text = $data['text'];
         $order->date = $data['date'];
-        $order->price = $_SESSION['logged_user']['id'];
+        $order->user_id = $_SESSION['logged_user']['id'];
         R::store($order);
         echo '<br><br><div style="color:green; text-align: center;"> Successful </div><hr>';
     } else {

@@ -61,34 +61,21 @@ include 'header_index.php';
 ?>
     <script type="text/javascript">
         function checkPassword(form) {
-            var password = form.password.value; // Получаем пароль из формы
-            var s_letters = "qwertyuiopasdfghjklzxcvbnm"; // Буквы в нижнем регистре
-            var b_letters = "QWERTYUIOPLKJHGFDSAZXCVBNM"; // Буквы в верхнем регистре
-            var digits = "0123456789"; // Цифры
-            var specials = "!@#$%^&*()_-+=\|/.,:;[]{}"; // Спецсимволы
-            var is_s = false; // Есть ли в пароле буквы в нижнем регистре
-            var is_b = false; // Есть ли в пароле буквы в верхнем регистре
-            var is_d = false; // Есть ли в пароле цифры
-            var is_sp = false; // Есть ли в пароле спецсимволы
+            var password = form.password.value;
+            var s_letters = "qwertyuiopasdfghjklzxcvbnm";
+            var b_letters = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+            var digits = "0123456789";
+            var specials = "!@#$%^&*()_-+=\|/.,:;[]{}";
+            var is_s = false; var is_b = false; var is_d = false; var is_sp = false;
             for (var i = 0; i < password.length; i++) {
-                /* Проверяем каждый символ пароля на принадлежность к тому или иному типу */
                 if (!is_s && s_letters.indexOf(password[i]) != -1) is_s = true;
                 else if (!is_b && b_letters.indexOf(password[i]) != -1) is_b = true;
                 else if (!is_d && digits.indexOf(password[i]) != -1) is_d = true;
-                else if (!is_sp && specials.indexOf(password[i]) != -1) is_sp = true;
-            }
-            var rating = 0;
-            var text = "";
-            if (is_s) rating++; // Если в пароле есть символы в нижнем регистре, то увеличиваем рейтинг сложности
-            if (is_b) rating++; // Если в пароле есть символы в верхнем регистре, то увеличиваем рейтинг сложности
-            if (is_d) rating++; // Если в пароле есть цифры, то увеличиваем рейтинг сложности
-            if (is_sp) rating++; // Если в пароле есть спецсимволы, то увеличиваем рейтинг сложности
-            /* Далее идёт анализ длины пароля и полученного рейтинга, и на основании этого готовится текстовое описание сложности пароля */
+                else if (!is_sp && specials.indexOf(password[i]) != -1) is_sp = true;}
+            var rating = 0; var text = "";
+            if (is_s) rating++; if (is_b) rating++; if (is_d) rating++; if (is_sp) rating++;
             if (password.length < 6 && rating < 3){ text = "Слишком простой пароль";  alert(text); return false;}
             else if (password.length >= 6 && rating == 1) { text = "Слишком простой пароль";  alert(text); return false;}
-
-            // Выводим итоговую сложность пароля
-             // Форму не отправляем
         }
     </script>
 <div class="about">

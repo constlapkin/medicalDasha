@@ -59,17 +59,15 @@ $orders = R::find('orders', ' LIMIT :start, :limit ',
             else {
                 $order_row['status'] = "&times;";
             }
-            $user = R::findOne('users', 'WHERE id = :user_id',
-                array(
-                    ':user_id' => $order_row['user_id']
-                ));
+            $user = R::find('users', 'where id = ?', array($order_row['user_id']));
+
             echo ('
 
     <div class="row">
         <div class="col-md-1">'.$order_row['id'].'</div>
-        <div class="col-md-3"><a href="edit_order.php?id='.$order_row["id"].'">'.$user['last_name'].' '.$user['first_name'].'</a></div>
+        <div class="col-md-3"><a href="edit_order.php?id='.$order_row["id"].'">'.$user[3]['last_name'].' '.$user[3]['first_name'].'</a></div>
         <div class="col-md-3"><a href="edit_order.php?id='.$order_row["id"].'">'.$order_row['text'].'</a></div>
-        <div class="col-md-2">'.$user['phone'].'</div>
+        <div class="col-md-2">'.$user[3]['phone'].'</div>
         <div class="col-md-2">'.$order_row['date'].'</div>
         <div class="col-md-1">'.$order_row['status'].'</div>
     </div>
