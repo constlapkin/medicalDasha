@@ -85,7 +85,7 @@ hr {
     margin-right: 45%;
 }
 .nav-item {
-  padding: 10px 15px !important;
+  /*margin: 10px 15px !important;*/
 }
 a.active {
   background-color: #ff7878;
@@ -212,6 +212,7 @@ width:500px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     padding: 10px;
     border-radius: 5px;
+    max-width: 100%;
    }
    .txtalignment{
      font-size: 20px;
@@ -244,6 +245,7 @@ width:500px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
   border-radius: 5px;
   padding: 10px;
+    max-width:100%;
    }
    .txtali{
      font-size: 20px;

@@ -15,7 +15,7 @@ $post = R::findOne('posts', 'WHERE status = 1 AND id = :id',
     <div class="container information">
         <div class="row centered">
             <br><br>
-            <h3><?  echo ($post['title']) ?></h3>
+            <h3 class="col-12"><?  echo ($post['title']) ?></h3>
         </div>
     </div>
 </div>
